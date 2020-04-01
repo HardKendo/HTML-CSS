@@ -104,3 +104,10 @@ input{
 img[alt="Mic"],[alt="Mon"]{
     border: 4px double royalblue;
 }
+
+.menu li a:hover {
+    color: red;
+}
+.menu li a:active {
+    color: green;
+}
