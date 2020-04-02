@@ -1,52 +1,96 @@
-header{
-    font-size: 35px;
-    font-style: normal;
-    text-align: center;
-    border: 5px outset black;
-    border-radius: 200px;
+/*Главная страница*/
+.container{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    background-color: gray;
+    border: 2px solid white;
 }
-header + p{
+.logo {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.header{
+    height: 220px;
+    position: absolute;
+    display: inline-block;   
+} 
+
+.header h1{
+    font-size: 40px;
+    margin-left: 230px;
+    margin-right: 350px;
+    margin-top: -10px;
+}
+div + p{
+    margin-top: 150px;
     font-size: 18px;
     color: black;
     text-align: center;
+    font-weight: 700;
 }
-.menu li:first-child{
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+.menu li a:hover {
+    color: red;
 }
-.menu li:last-child{
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+.menu li a:active {
+    color: orange;
+}
+.gmenu {
+    right: 0%;
+    position: absolute;
 }
 .menu li{
-    width: 200px;
-    height: 50px;
-    list-style-type: none;
-    border: 2px solid black;
-    text-align: center;
+    width: 150px;
+    display: inline-block;
+    list-style-type: none;  
 }
 .menu a{
-   color: darkblue;
-   font-size: 18px;
-   font-style: italic;
-   font-weight: bold;
-   letter-spacing: 5px;
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    color: darkblue;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    border: 2px solid black;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
+.gmenu h2{
+    padding-left: 200px;
+}
+
+
+/*Каталог*/
+.cat {
+    position: absolute;
+    top: 300px;
+}  
 .catalog li{
+    display: inline-block;
     width: 200px;
-    height: 50px;
+    height: 300px;
     list-style-type: none;
     border: 5px solid brown;
     text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 .catalog a{
+    display: block;
+    width: 100%;
+    height: 300px;
     color: darkblue;
-   font-size: 18px;
-   font-style: italic;
-   font-weight: bold;
-   letter-spacing: 5px;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 5px;
+   
 }
 
+
+/*Товар*/
 .prod{
     color: #000;
     font-size: 18px;
@@ -60,16 +104,12 @@ p {
     line-height: 24px;
     text-align: left;
 }
-/*.tech{
-    list-style-image: url(../img/nota3.png);
+/* Контакты */
+.contacts {
+    position: absolute;
+    left: 35%;
+    top: 35%;
 }
-
-.tech li {
-    font-style: oblique;
-    color: darkblue;
-    line-height: 24px;
-}*/
-
 textarea{
     height: 100px;
     width: 400px;
@@ -79,7 +119,6 @@ input{
     width: 200px;
     height: 25px;
 }
-
 textarea,
 input{
     font-size: 14px;
@@ -115,12 +154,7 @@ img[alt="Mic"]:hover,[alt="Mon"]:hover{
     outline: none;
 }
 
-.menu li a:hover {
-    color: red;
-}
-.menu li a:active {
-    color: orange;
-}
+
 
 table{
     border: 1px solid #000;
@@ -139,4 +173,27 @@ table td {
     font-size: 32px;
     font-weight: 800;
     color: red;
+}
+
+
+/*Подвал*/
+.footer{
+    position: absolute;
+    margin-top: 880px;
+    height: 50px;
+    width: 100%;
+    right: 0%;
+    background-color: gray;
+}
+.footer p{
+    margin-right: 20px;
+    text-align: right;
+}
+
+hr {
+    position: absolute;
+    width: 100%;
+    top: 250px;
+    height: 5px;
+    background-color: darkblue;
 }
