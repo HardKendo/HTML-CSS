@@ -91,6 +91,10 @@ div + p{
 
 
 /*Товар*/
+.gprod {
+    position: absolute;
+    top: 30%;
+}
 .prod{
     color: #000;
     font-size: 18px;
@@ -103,6 +107,17 @@ p {
     font-weight: 400;
     line-height: 24px;
     text-align: left;
+}
+.buy{
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    font-size: 30px;
+    width: 120px;
+    height: 50px;
+    margin-left: 80px;
+}
+.buy:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
 }
 /* Контакты */
 .contacts {
@@ -179,11 +194,11 @@ table td {
 /*Подвал*/
 .footer{
     position: absolute;
-    margin-top: 880px;
+    margin-top: 90%;
     height: 50px;
     width: 100%;
     right: 0%;
-    background-color: gray;
+    background-color: rgb(138, 101, 101);
 }
 .footer p{
     margin-right: 20px;
